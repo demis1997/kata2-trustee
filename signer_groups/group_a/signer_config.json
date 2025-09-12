@@ -1,0 +1,15 @@
+{
+  "group_id": "group_a",
+  "group_name": "High Security Signers",
+  "tee_type": "intel_tdx",
+  "min_threshold": 2,
+  "max_signers": 4,
+  "required_attestation": "intel_tdx",
+  "allowed_operations": ["sign", "generate_key", "derive_child_key"],
+  "security_level": "high",
+  "resources": [
+    "keys/high_security/coordinator_key",
+    "keys/high_security/party_keys/*",
+    "keys/high_security/signing_keys/*"
+  ]
+}

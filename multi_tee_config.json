@@ -1,0 +1,42 @@
+{
+  "mpc_config": {
+    "threshold": 3,
+    "parties": 4,
+    "algorithm": "ECDSA_SECP256K1",
+    "tee_types": ["intel_tdx", "intel_sgx", "sample"],
+    "security_levels": {
+      "high": ["intel_tdx"],
+      "medium": ["intel_sgx"],
+      "development": ["sample"]
+    },
+    "trustworthiness_thresholds": {
+      "intel_tdx": {
+        "hardware": 95,
+        "configuration": 90,
+        "executables": 90,
+        "file_system": 85,
+        "runtime_opaque": 80,
+        "storage_opaque": 80,
+        "sourced_data": 75
+      },
+      "intel_sgx": {
+        "hardware": 85,
+        "configuration": 80,
+        "executables": 80,
+        "file_system": 75,
+        "runtime_opaque": 70,
+        "storage_opaque": 70,
+        "sourced_data": 65
+      },
+      "sample": {
+        "hardware": 50,
+        "configuration": 50,
+        "executables": 50,
+        "file_system": 50,
+        "runtime_opaque": 50,
+        "storage_opaque": 50,
+        "sourced_data": 50
+      }
+    }
+  }
+}

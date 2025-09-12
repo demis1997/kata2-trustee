@@ -1,0 +1,14 @@
+{
+  "group_id": "group_c",
+  "group_name": "Development Signers",
+  "tee_type": "sample",
+  "min_threshold": 1,
+  "max_signers": 8,
+  "required_attestation": "sample",
+  "allowed_operations": ["sign", "generate_key", "derive_child_key"],
+  "security_level": "development",
+  "resources": [
+    "keys/development/coordinator_key",
+    "keys/development/party_keys/*"
+  ]
+}

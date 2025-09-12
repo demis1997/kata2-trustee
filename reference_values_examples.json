@@ -1,0 +1,263 @@
+{
+  "reference_values": {
+    "intel_tdx": {
+      "description": "Intel TDX reference values for Azure Confidential Computing",
+      "tee_type": "intel_tdx",
+      "measurements": {
+        "mrtd": {
+          "description": "TD measurement (like MRENCLAVE in SGX)",
+          "expected_values": [
+            "REQUIRED_MRTD_VALUE_1",
+            "REQUIRED_MRTD_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "mrconfig_id": {
+          "description": "Configuration measurement for TDX",
+          "expected_values": [
+            "REQUIRED_MRCONFIG_ID_VALUE_1",
+            "REQUIRED_MRCONFIG_ID_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "mrowner": {
+          "description": "Owner measurement for TDX",
+          "expected_values": [
+            "REQUIRED_MROWNER_VALUE_1",
+            "REQUIRED_MROWNER_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "mrowner_config": {
+          "description": "Owner configuration measurement for TDX",
+          "expected_values": [
+            "REQUIRED_MROWNER_CONFIG_VALUE_1",
+            "REQUIRED_MROWNER_CONFIG_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "rtmr0": {
+          "description": "Runtime Measurement Register 0",
+          "expected_values": [
+            "REQUIRED_RTMR0_VALUE_1",
+            "REQUIRED_RTMR0_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "rtmr1": {
+          "description": "Runtime Measurement Register 1",
+          "expected_values": [
+            "REQUIRED_RTMR1_VALUE_1",
+            "REQUIRED_RTMR1_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "rtmr2": {
+          "description": "Runtime Measurement Register 2",
+          "expected_values": [
+            "REQUIRED_RTMR2_VALUE_1",
+            "REQUIRED_RTMR2_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "rtmr3": {
+          "description": "Runtime Measurement Register 3",
+          "expected_values": [
+            "REQUIRED_RTMR3_VALUE_1",
+            "REQUIRED_RTMR3_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "tcb_svn": {
+          "description": "Trusted Computing Base Security Version Number",
+          "expected_values": [
+            "REQUIRED_TCB_SVN_VALUE_1",
+            "REQUIRED_TCB_SVN_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "td_attributes": {
+          "description": "TD attributes and capabilities",
+          "expected_values": [
+            "REQUIRED_TD_ATTRIBUTES_VALUE_1",
+            "REQUIRED_TD_ATTRIBUTES_VALUE_2"
+          ],
+          "validation": "exact_match"
+        }
+      },
+      "trustworthiness_thresholds": {
+        "hardware": 95,
+        "configuration": 90,
+        "executables": 90,
+        "file_system": 85,
+        "runtime_opaque": 80,
+        "storage_opaque": 80,
+        "sourced_data": 75
+      }
+    },
+    "intel_sgx": {
+      "description": "Intel SGX reference values",
+      "tee_type": "intel_sgx",
+      "measurements": {
+        "mrenclave": {
+          "description": "Enclave measurement",
+          "expected_values": [
+            "REQUIRED_MRENCLAVE_VALUE_1",
+            "REQUIRED_MRENCLAVE_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "mrsigner": {
+          "description": "Signer measurement",
+          "expected_values": [
+            "REQUIRED_MRSIGNER_VALUE_1",
+            "REQUIRED_MRSIGNER_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "cpu_svn": {
+          "description": "CPU Security Version Number",
+          "expected_values": [
+            "REQUIRED_CPU_SVN_VALUE_1",
+            "REQUIRED_CPU_SVN_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "isv_svn": {
+          "description": "ISV Security Version Number",
+          "expected_values": [
+            "REQUIRED_ISV_SVN_VALUE_1",
+            "REQUIRED_ISV_SVN_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "attributes": {
+          "description": "Enclave attributes",
+          "expected_values": [
+            "REQUIRED_ATTRIBUTES_VALUE_1",
+            "REQUIRED_ATTRIBUTES_VALUE_2"
+          ],
+          "validation": "exact_match"
+        }
+      },
+      "trustworthiness_thresholds": {
+        "hardware": 85,
+        "configuration": 80,
+        "executables": 80,
+        "file_system": 75,
+        "runtime_opaque": 70,
+        "storage_opaque": 70,
+        "sourced_data": 65
+      }
+    },
+    "amd_sev_snp": {
+      "description": "AMD SEV-SNP reference values",
+      "tee_type": "amd_sev_snp",
+      "measurements": {
+        "vcek": {
+          "description": "Versioned Chip Endorsement Key",
+          "expected_values": [
+            "REQUIRED_VCEK_VALUE_1",
+            "REQUIRED_VCEK_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "platform_measurements": {
+          "description": "Platform measurements",
+          "expected_values": [
+            "REQUIRED_PLATFORM_MEASUREMENTS_VALUE_1",
+            "REQUIRED_PLATFORM_MEASUREMENTS_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "guest_measurements": {
+          "description": "Guest measurements",
+          "expected_values": [
+            "REQUIRED_GUEST_MEASUREMENTS_VALUE_1",
+            "REQUIRED_GUEST_MEASUREMENTS_VALUE_2"
+          ],
+          "validation": "exact_match"
+        }
+      },
+      "trustworthiness_thresholds": {
+        "hardware": 85,
+        "configuration": 80,
+        "executables": 80,
+        "file_system": 75,
+        "runtime_opaque": 70,
+        "storage_opaque": 70,
+        "sourced_data": 65
+      }
+    },
+    "arm_cca": {
+      "description": "ARM Confidential Compute Architecture reference values",
+      "tee_type": "arm_cca",
+      "measurements": {
+        "realm_measurements": {
+          "description": "Realm measurements",
+          "expected_values": [
+            "REQUIRED_REALM_MEASUREMENTS_VALUE_1",
+            "REQUIRED_REALM_MEASUREMENTS_VALUE_2"
+          ],
+          "validation": "exact_match"
+        },
+        "platform_measurements": {
+          "description": "Platform measurements",
+          "expected_values": [
+            "REQUIRED_PLATFORM_MEASUREMENTS_VALUE_1",
+            "REQUIRED_PLATFORM_MEASUREMENTS_VALUE_2"
+          ],
+          "validation": "exact_match"
+        }
+      },
+      "trustworthiness_thresholds": {
+        "hardware": 85,
+        "configuration": 80,
+        "executables": 80,
+        "file_system": 75,
+        "runtime_opaque": 70,
+        "storage_opaque": 70,
+        "sourced_data": 65
+      }
+    },
+    "sample": {
+      "description": "Sample attester reference values for development",
+      "tee_type": "sample",
+      "measurements": {
+        "launch_digest": {
+          "description": "Launch digest (simulated)",
+          "expected_values": [
+            "abcde",
+            "fghij"
+          ],
+          "validation": "exact_match"
+        },
+        "svn": {
+          "description": "Security Version Number (simulated)",
+          "expected_values": [
+            "1",
+            "2"
+          ],
+          "validation": "exact_match"
+        },
+        "platform_version": {
+          "description": "Platform version (simulated)",
+          "expected_values": [
+            {"major": 1, "minor": 4},
+            {"major": 1, "minor": 5}
+          ],
+          "validation": "exact_match"
+        }
+      },
+      "trustworthiness_thresholds": {
+        "hardware": 50,
+        "configuration": 50,
+        "executables": 50,
+        "file_system": 50,
+        "runtime_opaque": 50,
+        "storage_opaque": 50,
+        "sourced_data": 50
+      }
+    }
+  }
+}

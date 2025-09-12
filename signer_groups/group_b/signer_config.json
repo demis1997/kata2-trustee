@@ -1,0 +1,14 @@
+{
+  "group_id": "group_b",
+  "group_name": "Medium Security Signers",
+  "tee_type": "intel_sgx",
+  "min_threshold": 2,
+  "max_signers": 6,
+  "required_attestation": "intel_sgx",
+  "allowed_operations": ["sign", "generate_key"],
+  "security_level": "medium",
+  "resources": [
+    "keys/medium_security/coordinator_key",
+    "keys/medium_security/party_keys/*"
+  ]
+}

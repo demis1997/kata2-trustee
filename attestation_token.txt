@@ -1,0 +1,11 @@
+[2025-09-12T07:10:24Z WARN  attester] No TEE platform detected. Sample Attester will be used.
+             If you are expecting to collect evidence from inside a confidential guest,
+             either your guest is not configured correctly, or your attestation client
+             was not built with support for the platform.
+    
+             Verify that your guest is a confidential guest and that your client
+             (such as kbs-client or attestation-agent) was built with the feature
+             corresponding to your platform.
+    
+             Attestation will continue using the fallback sample attester.
+eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImp3ayI6eyJhbGciOiJFUzI1NiIsImt0eSI6IkVDIiwiY3J2IjoiUC0yNTYiLCJ4IjoiSlVjY2RzTGZUcjR0WDhHd2t5VllfN3dnM2lXMUhGbXNUc1oxYzNiQ2lZQSIsInkiOiJjZ1pTd3NXbmtvcy1mbjBFendXQ3V6YjBoNXh3c3R1R3FpN2tUWWdRQlBFIn19.eyJlYXRfcHJvZmlsZSI6InRhZzpnaXRodWIuY29tLDIwMjQ6Y29uZmlkZW50aWFsLWNvbnRhaW5lcnMvVHJ1c3RlZSIsImlhdCI6MTc1NzY2MTAyNCwiZWFyLnZlcmlmaWVyLWlkIjp7ImRldmVsb3BlciI6Imh0dHBzOi8vY29uZmlkZW50aWFsY29udGFpbmVycy5vcmciLCJidWlsZCI6ImF0dGVzdGF0aW9uLXNlcnZpY2UgMC4xLjAifSwic3VibW9kcyI6eyJjcHUwIjp7ImVhci5zdGF0dXMiOiJjb250cmFpbmRpY2F0ZWQiLCJlYXIudHJ1c3R3b3J0aGluZXNzLXZlY3RvciI6eyJjb25maWd1cmF0aW9uIjozNiwiZXhlY3V0YWJsZXMiOjMzLCJoYXJkd2FyZSI6OTd9LCJlYXIuYXBwcmFpc2FsLXBvbGljeS1pZCI6ImRlZmF1bHQiLCJlYXIudmVyYWlzb24uYW5ub3RhdGVkLWV2aWRlbmNlIjp7InJlcG9ydF9kYXRhIjoiOUg3c1VOc0V6QjBzMHJvWmJnUDA3VURKMTJ6Yk14YmJXR2l1YWtIMVA1Mkl2N1Z5NEV2ZXhUKzBFRUJiOHhzeCIsInJ1bnRpbWVfZGF0YV9jbGFpbXMiOnsiYWRkaXRpb25hbC1ldmlkZW5jZSI6IiIsIm5vbmNlIjoiL1pRdWFXOE5DRWdjZHdrLzVLeExtdTJUdFBtbVc1L21wYkNXYnlyRTV6RT0iLCJ0ZWUtcHVia2V5Ijp7ImFsZyI6IkVDREgtRVMrQTI1NktXIiwiY3J2IjoiUC0yNTYiLCJrdHkiOiJFQyIsIngiOiJyZVhaUWF5cHZIYm90QzJDNEppYldQOHRmaGhaczlmejJTaHpUT2pWbl9VIiwieSI6ImxMLS1jQ3YtVG5JdlczUmVOVWp5VGI4Z1BkOVNBUWRid2tDaG5pOXdtSG8ifX0sInNhbXBsZSI6eyJsYXVuY2hfZGlnZXN0IjoiYWJjZGUiLCJwbGF0Zm9ybV92ZXJzaW9uIjp7Im1ham9yIjoxLCJtaW5vciI6NH0sInN2biI6IjEifX19fSwiZXhwIjoxNzU3NjYxMzI0fQ.-C1afels0MyZb-aV0rIJO_MBNgbQSDTHDJ0xbHGoXgSl12VP27ar6uMbQsIoqcnCOv1eSR6H_rM6INJVVRBELQ
